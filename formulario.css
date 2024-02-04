@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0.2em;
+    box-sizing: border-box;
+}
+
+#titulo{
+    font-family: "Dancing Script", cursive;
+    color: #000000;
+    margin-left: 13%;
+    justify-content: center; 
+}
+
+#subtitulo{
+    font-family: sans-serif;
+    color: #1b5ba5ad;
+    justify-content: center; 
+}
+
+fieldset{
+    border: 30;
+    padding: 5px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.582);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #002046;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center; 
+}
+
+input, select, textarea, button{
+    border-radius:5px;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    color: #012349;
+    display: block;
+}
+
+.campo{
+    margin-bottom: 1em;
+}
+
+fieldset.grupo{
+    margin-right: 1em;
+    padding: 8px;
+}
+
+input{
+    padding: 2px 5px 2px;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 8px 8px;
+    border: 1px solid #307e77;
+    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+    display: block;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #E0E0F8;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: #0663b9;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    top: 20px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: all .4s ease-out;
+}
+
+.botao:hover{
+    background: #b9d8f5;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    border-radius: 4%;
+    display: flex;
+    box-shadow: 5px, 5px, 10px rgba(0, 0, 0, .212);
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-image{
+    width: 100%;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e4e4e49d;
+    padding: 3rem;
+}
+
+.form-image img {
+    width: 31rem; /**Para alterar o tamanho da imagem**/
+}
+
+.form{
+    width: 100%;
+    border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(220, 232, 235);
+    padding: 3rem;
+}
