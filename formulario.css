@@ -50,9 +50,10 @@ input, select, textarea, button{
     margin-bottom: 1em;
 }
 
-fieldset.grupo{
+.grupo input{
     margin-right: 1em;
-    padding: 8px;
+    padding: 3px 10px 3px;
+    width: 200px;
 }
 
 input{
@@ -132,3 +133,4 @@ input{
     background-color: rgb(220, 232, 235);
     padding: 3rem;
 }
+
