@@ -9,15 +9,16 @@
     <title>Formulário</title>
 </head>
 <body>
-
+<section>
     <div class="container">
         <div class="form-image">
             <img src="shopping_bags.svg" alt="Bolsas de compras">
         </div>
     </div>
+    
 
-    <div class="form">
-        <form>
+    <article class="form">
+        <form action="cadastro.php" method="post" autocomplete="on">
 
         <div>
             <h1 id="titulo">Vestuário do cliente</h1>
@@ -28,20 +29,28 @@
 
         <fieldset class="grupo">
             <legend>Dados pessoais</legend> 
-            <strong>Nome: </strong> <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <label for="inome"> <strong>Nome: </strong> </label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu nome" required minlength="3" maxlength="15" autocomplete="cc-name">
             <br>
-            <br><strong>E-mail: </strong> <input type="email" name="email" placeholder="Digite seu e-mail" required>
+            <br>
+            <label for="iemail"> <strong>E-mail: </strong> </label>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required autocomplete="email">
+
+            <br>
+            <br>
+            <label for="itel"> <strong>Telefone: </strong> </label>
+                <input type="tel" name="telefone" id="itel" placeholder="(xx) xxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required autocomplete="tel" >
         </fieldset>
         <br>
         <div class="campo">
             <label><strong>Em qual estação investe mais?</strong></label>
                 
                 <label>
-                    <input type="radio" name="primavera-verao" value="brinco">Primavera/Verão
+                    <input type="radio" name="primavera-verao" value="fresh">Primavera/Verão
                 </label>
                 
                 <label>
-                    <input type="radio" name="outono-inverno" value="colar">Outono/Inverno
+                    <input type="radio" name="outono-inverno" value="cold">Outono/Inverno
                 </label>
         </div>
 
@@ -49,19 +58,23 @@
             <label><strong>Acessórios mais usados</strong></label>
                 
                 <label>
-                    <input type="checkbox" name="brinco" value="brinco">Brinco
+                    <input type="checkbox" name="brinco" value="brinco"> Brinco
                 </label>
                 
                 <label>
-                    <input type="checkbox" name="colar" value="colar">Colar
+                    <input type="checkbox" name="colar" value="colar"> Colar
                 </label>
 
                 <label>
-                    <input type="checkbox" name="braço" value="braço">Pulseira/Relógio
+                    <input type="checkbox" name="anel" value="anel"> Anel
                 </label>
 
                 <label>
-                    <input type="checkbox" name="cabelo" value="cabelo">Presilhas/Tiaras 
+                    <input type="checkbox" name="braço" value="braço"> Pulseira/Relógio
+                </label>
+
+                <label>
+                    <input type="checkbox" name="cabelo" value="cabelo"> Presilhas/Tiaras 
                 </label>
         </div>
 
@@ -69,15 +82,15 @@
             <label><strong>Tonalidade que mais te atrai: </strong></label>
                 
                 <label>
-                    <input type="radio" name="neutro" value="neutro">Neutro
+                    <input type="radio" name="neutro" value="neutro"> Neutro
                 </label>
                 
                 <label>
-                    <input type="radio" name="pastel" value="pastel">Pastel
+                    <input type="radio" name="pastel" value="pastel"> Pastel
                 </label>
 
                 <label>
-                    <input type="radio" name="neon" value="neon">Neon
+                    <input type="radio" name="neon" value="neon"> Neon
                 </label>
 
         </div>
@@ -88,9 +101,15 @@
             <textarea row="25" style="width: 25em" id="contribuiçao" name="contribuiçao" required></textarea>
         </div>
 
-        <button class="botao" type="submit" onsubmit="">Concluído</button>
+        <p>
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+        </p>
+        <p>
+            <button class="botao" type="reset" onsubmit="">Limpar</button>
+        </p>
 
         </form>
-    </div>
+    </article>
+</section>
 </body>
 </html>
