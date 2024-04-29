@@ -7,6 +7,13 @@
 ## Sobre
 Sendo assim, decidi que uma boa prática para meus estudos iniciais em programação seria a construção de um simples formulário. Neste exemplo, utilizei questionários sobre o vestuário do cliente, tornando possível uma aproximação entre o cliente e a empresa.
 
+__*Pratiquei:*__
+- Input do tipo checkbox e radius;
+- Display;
+- Position;
+- Fieldset;
+- Botões (submit e onsubmit).
+
 ## Ferramentas
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
