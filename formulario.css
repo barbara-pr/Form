@@ -49,14 +49,14 @@ input, select, textarea, button{
     margin-bottom: 1em;
 }
 
+.grupo{
+    padding: 8px;
+}
+
 .grupo input{
     margin-right: 1em;
     padding: 3px 10px 3px;
     width: 200px;
-}
-
-input{
-    padding: 2px 5px 2px;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
@@ -84,11 +84,11 @@ input{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    transition: all .4s ease-out;
+    transition: all .0.1s ease-out;
 }
 
 .botao:hover{
-    background: #b9d8f5;
+    background: #2e3031;
     box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: none;
 }
@@ -101,7 +101,7 @@ input{
     margin: auto;
     display: flex;
     box-shadow: 5px, 5px, 10px rgba(0, 0, 0, .212);
-    flex-direction: inline-block;
+    
     justify-content: center;
     align-items: center;
     min-width: 320px;
@@ -115,7 +115,6 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #e4e4e49d;
     padding: 0px;
 }
